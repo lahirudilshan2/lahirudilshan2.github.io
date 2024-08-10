@@ -17,6 +17,7 @@ html{
     background-color: rgba(0, 0, 0, .5);
     position: sticky;
     top:0;
+    z-index: 100;
 }
 
 .navbar img{
@@ -286,4 +287,90 @@ footer {
 .social-media img {
     width: 60px;
     height: auto;
+}
+
+@media only screen and (max-width:768px) {
+
+    .navbar ul{
+        flex-wrap: wrap;
+        flex-flow: column;
+        margin-right: 30px;
+    }
+    .navbar ul li{
+        font-size: 12px;
+        padding: 8px;
+        
+    }
+    .navbar img{
+        width: 120px;
+        height: 75px;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .heading1{
+        font-size:2rem;
+        margin: 100px 0 50px 10px;
+    }
+    #pic{
+        padding:10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    }
+    #pic img{
+        width: 200px;
+        height: 150px;
+        
+        
+    }
+    #intro{
+            font-size: 8px;
+            margin:0px 100px 0px 0px;
+            padding:50px 0px 0px 20px ;
+            width: 10px;
+            
+    }
+    #intro h2{
+        font-size: 1rem;
+        padding: 0px 0 0 100px;
+    }
+    h1{
+        font-size: 15px;
+        margin: 0 0 0 45px;
+    }
+    p{
+        font-size: 11px;
+        margin: 10px 0 0 150px;
+        width: 250px;
+    }
+    .gallery img{
+        width: 250px;
+        height: 150px;    
+    }
+    .box{
+        height: 300px;
+        margin: 20px 0 10px 0;
+    }
+    .box video{
+        width: 250px;
+        height: 200px;
+
+    }
+    .input{
+        width: 80%;
+    }
+    #msg{
+        width: 80%;
+    }
+    #send{
+        width: 30%;
+    }
+    .social-media a{
+        margin: 0 ;
+    }
+    footer p{
+        margin: 0;
+    }
 }
