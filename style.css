@@ -100,6 +100,9 @@ html{
     margin: 40px 0px;
 
 }
+.wrapper{
+    margin: 0px 350px 10px 0px;
+}
 
 /* About */
 
@@ -289,6 +292,32 @@ footer {
     height: auto;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+svg {
+	font-family: "RocknRoll One", sans-serif;
+	width: 250%; height: 150%;
+    
+}
+svg text {
+	animation: stroke 4s infinite alternate;
+	stroke-width: 2;
+	stroke: #faf9f9;
+	font-size: 80px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(247, 44, 8, 0); stroke: rgb(252, 252, 252);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(19, 118, 160, 0); stroke: rgb(246, 247, 247); }
+	80%  {fill: rgba(85,169,204,0); stroke: rgb(252, 252, 252); stroke-width: 3; }
+	100% {
+		fill: rgb(235, 238, 239); stroke: rgba(22,81,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
 @media only screen and (max-width:768px) {
 
     .navbar ul{
@@ -315,6 +344,13 @@ footer {
     #home{
         height: 715px;
     }
+    .wrapper{
+        margin: 0px 210px 50px 0px;
+        svg text{
+            font-size: 45px;
+        }
+    }
+    
     #pic{
         padding:10px;
         margin-left: auto;
@@ -363,10 +399,10 @@ footer {
 
     }
     .input{
-        width: 80%;
+        width: 70%;
     }
     #msg{
-        width: 80%;
+        width: 70%;
     }
     #send{
         width: 30%;
@@ -379,3 +415,7 @@ footer {
         font-size: 12px;
     }
 }
+
+
+
+
